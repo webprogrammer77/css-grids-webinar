@@ -1,0 +1,17 @@
+body,
+html {
+  margin: 0;
+  height: 100%; }
+
+.item {
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center; }
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 300px 100px;
+  min-height: 100%; }
+
+/*# sourceMappingURL=main.css.map */

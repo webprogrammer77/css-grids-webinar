@@ -1,0 +1,74 @@
+body,
+html {
+  margin: 0;
+  height: 100%; }
+
+.slider {
+  height: 100vh;
+  display: grid;
+  grid-template: 50% 50%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "info display" "info btns"; }
+  @media screen and (max-width: 768px) {
+    .slider {
+      grid-template-columns: 100%;
+      grid-template-rows: 400px 200px 300px;
+      grid-template-areas: "display" "info" "btns"; } }
+
+.slider__info {
+  background: #16a085;
+  grid-area: info; }
+
+.slider__display {
+  background: #2c3e50;
+  grid-area: display; }
+
+.slider__btns {
+  background: #d35400;
+  grid-area: btns; }
+
+/*
+.slider {
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  font-weight: bold;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @include tablets() {
+    flex-wrap: nowrap;
+  }
+}
+
+.slider__info {
+  background: #16a085;
+  width: 50%;
+  height: 100%;
+}
+
+.slider__display {
+  background: #2c3e50;
+  width: 50%;
+  height: 70%;
+
+  @include tablets {
+    order: -10;
+  }
+}
+
+.slider__btns {
+  background: #d35400;
+  width: 50%;
+  height: 30%;
+}
+
+.slider__info, .slider__display, .slider__btns {
+  @include tablets {
+    width: 100%;
+  }
+}
+
+*/
+
+/*# sourceMappingURL=main.css.map */
